@@ -1,0 +1,13 @@
+{
+  "name": "formation",
+  "displayName": "Formation Agents Skills",
+  "version": "1.0.0",
+  "description": "Pack de skills pour la formation d'agents IA",
+  "author": {
+    "name": "Sofiane5900",
+    "url": "https://github.com/Sofiane5900"
+  },
+  "repository": "https://github.com/Sofiane5900/skills-formation-agents",
+  "license": "MIT",
+  "keywords": ["skills", "formation", "agents", "claude"]
+}

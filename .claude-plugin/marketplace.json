@@ -1,0 +1,14 @@
+{
+  "name": "skills-formation-agents",
+  "owner": {
+    "name": "Sofiane5900",
+    "url": "https://github.com/Sofiane5900"
+  },
+  "plugins": [
+    {
+      "name": "formation",
+      "source": "./",
+      "description": "Pack de skills pour la formation d'agents IA"
+    }
+  ]
+}
