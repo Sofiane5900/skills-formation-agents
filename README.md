@@ -1,6 +1,6 @@
 # Skills Formation Agents
 
-Pack de skills pour former tes agents IA : **cadrer un plan**, **design d'interfaces**, **copywriting**. Un plugin Claude Code, une commande pour tout installer.
+Pack de skills pour former tes agents IA, organisé en **3 boîtes à outils** indépendantes : piloter un plan, design d'interfaces, copywriting. Pas de pipeline global — tu choisis l'outil selon le besoin.
 
 ---
 
@@ -15,22 +15,24 @@ Dans Claude Code (v2.1+) :
 
 ---
 
-## Le workflow
+## Les 3 boîtes à outils
 
-4 phases, du plan au texte final. Les skills s'enchaînent dans cet ordre :
-
-| Phase | Skill | Commande | Action | Incluse |
+| Domaine | Skill | Commande | Quand l'utiliser | Incluse |
 |---|---|---|---|---|
-| **1. Cadrer** | `grill-me` | `/grill-me` | Interview pour affûter un plan | ✅ |
-| **2. Design UI** | `make-interfaces-feel-better` | `/make-interfaces-feel-better [quick\|full] [cible]` | Polish des détails UI | ✅ |
-| **2. Design UI** | `impeccable` | `npx impeccable install` | Design system complet + itération live | ➕ |
-| **3. Rédiger** | `copywriting` | `npx skills add coreyhanes31/marketingskills --skill copywriting` | Copy neuf (landing, pricing…) | ➕ |
-| **3. Rédiger** | `copy-editing` | `npx skills add coreyhaines31/marketingskills --skill copy-editing` | Améliorer du copy existant | ➕ |
-| **4. Nettoyer** | `humanizer` | `/humanizer [fichier]` | Retire l'écriture générée par IA | ✅ |
+| **Piloter / réfléchir** | `grill-me` | `/grill-me` | Un plan ou un design est flou, tu veux l'affûter par interview | ✅ |
+| **Frontend / UI** | `make-interfaces-feel-better` | `/make-interfaces-feel-better [quick\|full] [cible]` | Polish UI rapide (typo, surfaces, animations, icônes) | ✅ |
+| **Frontend / UI** | `impeccable` | `npx impeccable install` | Design system complet + itération live (**OU**, pas après) | ➕ |
+| **Texte / copy** | `copywriting` | `npx skills add coreyhaines31/marketingskills --skill copywriting` | Écrire du copy neuf (landing, pricing…) | ➕ |
+| **Texte / copy** | `copy-editing` | `npx skills add coreyhaines31/marketingskills --skill copy-editing` | Améliorer du copy existant | ➕ |
+| **Texte / copy** | `humanizer` | `/humanizer [fichier]` | Passe finale anti-slop IA | ✅ |
 
 `✅` = dans le plugin · `➕` = install séparée (1 commande).
 
-**Flow** : `grill-me` → `make-interfaces-feel-better` (+ `impeccable`) → `copywriting` / `copy-editing` → `humanizer`
+### Comment les choisir
+
+- **Frontend** : `make-interfaces-feel-better` **OU** `impeccable`, selon la profondeur. Revue rapide → le premier ; design system + live → le second. Pas l'un après l'autre.
+- **Texte** : `copywriting` (neuf) **OU** `copy-editing` (existant). Seule séquence possible — optionnelle — `copywriting`/`copy-editing` → `humanizer` pour la passe anti-IA.
+- **Piloter** : `grill-me` est autonome, s'utilise quand un plan est flou, indépendamment du reste.
 
 ---
 
