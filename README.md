@@ -43,7 +43,7 @@ Dans Claude Code (v2.1+) :
 | `/grill-me` | Lance l'interview, réponds une question à la fois |
 | `/make-interfaces-feel-better` | Revue complète (défaut). `quick` = courte. Ajoute une cible : `full pricing page` |
 | `/humanizer` | Colle du texte → draft + audit + version finale. `/humanizer fichier.md` → réécrit le fichier |
-| `/impeccable <cmd>` | Après `npx impeccable install` : `polish`, `audit`, `distill`, `shape`, `typeset`… |
+| `/impeccable <sous-cmd> [cible]` | Après `npx impeccable install`. Une **sous-commande** puis la cible : `/impeccable polish`, `/impeccable audit pricing page`, `/impeccable distill` |
 
 ---
 
