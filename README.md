@@ -20,8 +20,8 @@ Dans Claude Code (v2.1+) :
 | Domaine | Skill | Commande | Quand l'utiliser | Incluse |
 |---|---|---|---|---|
 | **Piloter / réfléchir** | `grill-me` | `/grill-me` | Un plan ou un design est flou, tu veux l'affûter par interview | ✅ |
-| **Frontend / UI** | `make-interfaces-feel-better` | `/make-interfaces-feel-better [quick\|full] [cible]` | Polish UI rapide (typo, surfaces, animations, icônes) | ✅ |
 | **Frontend / UI** | `impeccable` | `npx impeccable install` | Design system complet + itération live (**OU**, pas après) | ➕ |
+| **Frontend / UI** | `make-interfaces-feel-better` | `/make-interfaces-feel-better [quick\|full] [cible]` | Polish UI rapide (typo, surfaces, animations, icônes) | ✅ |
 | **Texte / copy** | `copywriting` | `npx skills add coreyhaines31/marketingskills --skill copywriting` | Écrire du copy neuf (landing, pricing…) | ➕ |
 | **Texte / copy** | `copy-editing` | `npx skills add coreyhaines31/marketingskills --skill copy-editing` | Améliorer du copy existant | ➕ |
 | **Texte / copy** | `humanizer` | `/humanizer [fichier]` | Passe finale anti-slop IA | ✅ |
@@ -30,7 +30,7 @@ Dans Claude Code (v2.1+) :
 
 ### Comment les choisir
 
-- **Frontend** : `make-interfaces-feel-better` **OU** `impeccable`, selon la profondeur. Revue rapide → le premier ; design system + live → le second. Pas l'un après l'autre.
+- **Frontend** : `impeccable` **OU** `make-interfaces-feel-better`, selon la profondeur. Design system + live → `impeccable` ; revue rapide → `make-interfaces-feel-better`. Pas l'un après l'autre.
 - **Texte** : `copywriting` (neuf) **OU** `copy-editing` (existant). Seule séquence possible — optionnelle — `copywriting`/`copy-editing` → `humanizer` pour la passe anti-IA.
 - **Piloter** : `grill-me` est autonome, s'utilise quand un plan est flou, indépendamment du reste.
 
